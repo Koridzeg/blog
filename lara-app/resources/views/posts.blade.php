@@ -9,19 +9,19 @@
 </head>
 <body>
     <article>
-    <h1><a href="/post"> My first post </a></h1>
+    <h1><a href="/posts/my-first-post"> My first post </a></h1>
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, dolore cumque. Accusamus illum repellat nulla. Natus, voluptate. Nobis adipisci accusantium architecto tempora quod odit doloribus.</p>
 </article>
 
     <article>
-    <h1><a href="/post"> My Second post </a></h1>
+    <h1><a href="/posts/my-second-post"> My Second post </a></h1>
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, dolore cumque. Accusamus illum repellat nulla. Natus, voluptate. Nobis adipisci accusantium architecto tempora quod odit doloribus.</p>
 </article>
 
 <article>
-    <h1><a href="/post"> My Third post </a></h1>
+    <h1><a href="/posts/my-third-post"> My Third post </a></h1>
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, dolore cumque. Accusamus illum repellat nulla. Natus, voluptate. Nobis adipisci accusantium architecto tempora quod odit doloribus.</p>
 </article>
