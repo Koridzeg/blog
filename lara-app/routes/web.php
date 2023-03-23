@@ -16,22 +16,20 @@ use Illuminate\Support\Facades\File;
 */
 
 Route::get('/', function () {
-$files = File::files(resource_path("posts"));
+    $files = File::files(resource_path("posts"));
 
-$posts = Post::all();
-
-
-return view('posts', [
-    'posts' => $posts
-]);
+    $posts = Post::all();
 
 
+    return view('posts', [
+        'posts' => $posts
+    ]);
 });
 
 Route::get('posts/{post}', function ($slug) {
-$post = Post::find($slug);
+    $post = Post::find($slug);
 
-return view('post', [
-    'post' => $post
-]);
+    return view('post', [
+        'post' => $post
+    ]);
 })->where('post', '[A-z_\-]+');
