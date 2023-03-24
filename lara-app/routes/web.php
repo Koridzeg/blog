@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\File;
 */
 
 Route::get('/', function () {
-    $files = File::files(resource_path("posts"));
+    
 
     $posts = Post::all();
 
@@ -26,8 +26,8 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('posts/{post}', function ($slug) {
-    $post = Post::findOrFail($slug);
+Route::get('posts/{post}', function ($id) {
+    $post = Post::findOrFail($id);
 
     return view('post', [
         'post' => $post
