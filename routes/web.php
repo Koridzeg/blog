@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\File;
 Route::get('/', function () {
     
 
-    $posts = Post::latest()->with('category','author')->get();
+    $posts = Post::latest()->get();
 
 
     return view('posts', [
