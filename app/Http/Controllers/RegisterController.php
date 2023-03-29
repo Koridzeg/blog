@@ -20,7 +20,7 @@ class RegisterController extends Controller
             'email' => 'required|email|max:255|unique:users,email',
             'password' => 'required|min:7',
         ]);
-        User::create($attributes);
+        auth()->login(User::create($attributes));
 
         return redirect('/')->with('success', 'Your account has been created');
     }
