@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PostCommentsController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RegisterController;
@@ -44,3 +45,5 @@ Route::get('login', [SessionsController::class, 'create'])->middleware('guest');
 Route::post('login', [SessionsController::class, 'store'])->middleware('guest');
 
 Route::post('posts/{post:slug}/comments', [PostCommentsController::class, 'store']);
+
+Route::post('newsletter', NewsletterController::class);
